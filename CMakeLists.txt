@@ -202,6 +202,7 @@ endif ( )
 
 if ( WIN32 )
   add_definitions ( -DUSE_WIN32_FILEIO )
+  add_definitions ( -D_ALLOW_KEYWORD_MACROS )
 endif ( )
 
 add_library ( tiff ${TIFF_SRCS} libtiff/libtiff.def )
